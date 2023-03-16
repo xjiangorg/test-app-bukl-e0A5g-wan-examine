@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-component-ruvs
+  namespace: build-e2e-jkwx-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:3a789255837f2ff3dae85392740b719cd0bdee41133d5bf7dee707644feadb0a
+        name: my-python
+        resources: {}
+status: {}
